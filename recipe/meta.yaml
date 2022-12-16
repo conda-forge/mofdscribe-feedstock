@@ -31,10 +31,12 @@ requirements:
     - typing-extensions
     - openbabel
     - raspa2
+    - rdkit
 
 test:
   imports:
     - mofdscribe
+    - mofdscribe.featurizers.chemistry.RACS
   commands:
     - pip check
   requires:
